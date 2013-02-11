@@ -1,0 +1,126 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src = 'coloring.js'></script>
+        <link type="text/css" rel="stylesheet" href="color.css"/>
+    </head>
+    <body>
+
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+ 
+        <!-- <script>window.jQuery || document.write('<script src="jquery-1.9.1.min.js"><\/script>');</script>-->
+
+        <table align ="center"> 
+            <tr>
+                <td colspan ="3">
+                    <h1>Worcester Art Museum Painter</h1>
+                </td>
+            </tr>
+
+            <!-- Brush Sizes -->
+
+            <tr>
+                <td>
+                    <br>
+                    <img  onclick= "setSize(sizeLarge);" class ="tools" src ="assets/largepaintbrush.png">
+                    </br>
+                    <br>
+                    <img onclick= "setSize(sizeMedium);" class ="tools" src ="assets/mediumpaintbrush.png">
+                    </br>
+                    <br>
+                    <img onclick= "setSize(sizeSmall);" class ="tools" src ="assets/pencil.png">
+                    </br>
+                    <!-- Eraser note: if you dip the eraser 
+                    in paint you can color with it; not good-->
+                    <br>
+                    <img onclick = "setColor(colorWhite);" class ="tools" src ="assets/eraser.png">
+                    </br>
+                </td>
+
+                <td>
+                    <!-- Canvas --> 
+                    <div>
+                        <canvas  id='drawingCanvas' style="border: 7px solid silver" ></canvas>
+                    </div>
+
+                </td>
+
+                <td>
+                    <!-- functionality for selecting to come but it will 
+                    work similar to the current color selection logic -->
+                    <div style="height: 400px;width:130px; overflow:auto;">
+                    <!-- Tools -->
+                    <button>
+                        <img class ="coloringPage" src ="assets/colorpage.png">
+                    </button>
+                    <button>
+                        <img class ="coloringPage" src ="assets/colorpage.png">
+                    </button>
+                    <button>
+                        <img class ="coloringPage" src ="assets/colorpage.png">
+                    </button>
+                    <button>
+                        <img class ="coloringPage" src ="assets/colorpage.png">
+                    </button>
+                    <button>
+                        <img class ="coloringPage" src ="assets/colorpage.png">
+                    </button>
+                    <button>
+                        <img class ="coloringPage" src ="assets/colorpage.png">
+                    </button>
+                    <button>
+                        <img class ="coloringPage" src ="assets/colorpage.png">
+                    </button>
+                    <button>
+                        <img class ="coloringPage" src ="assets/colorpage.png">
+                    </button>
+
+                    </div>
+                </td>
+                <td>
+                    
+                        
+                    
+                </td>
+            </tr>
+        </table>
+        <table align ="center">
+            <tr>
+                <!-- Paint Cans -->
+                <td onclick="setColor(colorRed);">
+                    <img class ="paint" src ="assets/redpaintcan.png">
+                </td >
+                <td onclick="setColor(colorOrange);">
+                    <img class ="paint" src ="assets/orangepaintcan.png">
+                </td>
+                <td onclick="setColor(colorYellow);">
+                    <img class ="paint" src ="assets/yellowpaintcan.png">
+                </td >
+                <td onclick="setColor(colorGreen);">
+                    <img class ="paint" src ="assets/greenpaintcan.png">
+                </td>
+                <td onclick="setColor(colorBlue);">
+                    <img class ="paint" src ="assets/bluepaintcan.png">
+                </td >
+                <td onclick="setColor(colorPurple);">
+                    <img class ="paint" src ="assets/purplepaintcan.png">
+                </td>
+                <td onclick="setColor(colorPink);">
+                    <img class ="paint" src ="assets/pinkpaintcan.png">
+                </td>
+                <td onclick="setColor(colorBrown);">
+                    <img class ="paint" src ="assets/brownpaintcan.png">
+                </td >
+                <td onclick="setColor(colorBlack);">
+                    <img class ="paint" src ="assets/blackpaintcan.png">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
